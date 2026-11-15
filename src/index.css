@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#f7f5fd] text-[#181438] antialiased min-h-screen flex flex-col;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Doorway Arch Signature Shapes */
+.doorway-arch {
+  border-radius: 28px 28px 8px 8px;
+}
+
+.doorway-arch-lg {
+  border-radius: 40px 40px 12px 12px;
+}
+
+/* Custom Scrollbar hide for category chips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
